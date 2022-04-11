@@ -10,6 +10,9 @@
     <li><a href="url.html">URL/Webpage Check</a></li>
     <li><a href="howto.html">How To Use</a></li>
     <li><a href="index.html">Home</a></li>
+    <div class="slide">
+      <input type="range" min="10" max="50" value="14" class="slider" id="textrange" onchange="slidefunction(value)">
+    </div>
   </ul>
   <style>
     head {
@@ -23,11 +26,8 @@
 
 <body>
   <h1>Welcome</h1>
-  <h1>If you are having issues with reading text, please use this toggle down below:</h1>
+  <h1>If you are having issues with reading text, please use this toggle in the TOP LEFT CORNER:</h1>
   <!--TO-DO: create a toggle that changes size-->
-  <div class="slide">
-    <input type="range" min="10" max="50" value="14" class="slider" id="textrange" onchange="slidefunction()">
-  </div>
   <h1>Also, if you are confused with how to use this site, please click on "How To Use" in the navigation bar above on the top right corner</h1>
   <script src="slider.js"></script>
 </body>
