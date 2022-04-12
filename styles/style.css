@@ -29,3 +29,24 @@ li a {
 .slide {
   float: left;
 }
+
+.myButton {
+  color: rgb(0, 85, 255); 
+  font-size: 30px; 
+  line-height: 30px; 
+  padding: 15px; 
+  border-radius: 5px; 
+  font-weight: normal; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  border: 2px solid rgb(28, 110, 164); 
+  display: inline-block;
+}
+.myButton:hover {
+  background: #1C6EA4; 
+}
+.myButton:active {
+  background: #144E75; 
+}
