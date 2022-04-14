@@ -1,13 +1,13 @@
 function urlfunction(){
 	var urlinput = document.getElementById("ip").value;
 	console.log('{ "ip": "'+urlinput+'" }');
-	fetch('https://yeti.roe.hr/api/v1/check/ip', {
+	fetch('https://yeti.roe.hr/api/v1/check/url', {
 		method: 'post',
-		body: '{ "ip": "'+urlinput+'" }'
+		body: '{ "url": "'+urlinput+'" }'
 	})
 	.then(response => response.json())
 	.then(data =>{
-		document.getElementById("res").value = 'success: ' + data.success + '\n' + 'resp: ' + data.resp + '\n' + 'err: ' + data.err;
+		document.getElementById("res").value = data.resp ? "Link is potentially malicious" : "No malicious content found";
 	})
 
 	//.then(function (response) {
