@@ -9,13 +9,29 @@
       <li><a href="url.html">URL/Webpage Check</a></li>
       <li><a href="howto.html">How To Use</a></li>
       <li><a href="index.html">Home</a></li>
+      <div class="slide">
+        <input type="range" min="10" max="50" value="14" class="slider" id="textrange" onchange="slidefunction(value)">
+      </div>
     </ul>
+    <style>
+      head {
+        font-size: 14px;
+      }
+      body {
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
     <div class="file">
       <h1>File Check</h1>
-      <input type="text" placeholder="Search..">
-      <button type="check">Check</button>
+      <script src="slider.js"></script>
+      <input id="file" type="file" placeholder="Select File">
+      <button id="filecheck" onclick="filefunction()">Check</button>
+      <textarea id="res"></textarea>
     </div>
+
+    <script src="slider.js"></script>
+  <script src="file.js"></script>
   </body>
 </html>
