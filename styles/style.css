@@ -46,7 +46,10 @@ li a {
 }
 .myButton:hover {
   background: #1C6EA4; 
-  color: rgb(0, 0, 0); 
+  color: rgb(0, 0, 0);
+  font-size: 40px; 
+  line-height: 40px; 
+  padding: 20px; 
 }
 .myButton:active {
   background: #144E75; 
