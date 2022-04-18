@@ -7,16 +7,14 @@ function urlfunction(){
 	})
 	.then(response => response.json())
 	.then(data =>{
-		document.getElementById("res").value = data.resp ? "Link is potentially malicious" : "No malicious content found";
+		if(data.resp == true){
+			document.getElementById("res").value = "Found a yeti!\n"
+			document.getElementById("res").value += "Link is potentially malicious"
+		}
+		else{
+			document.getElementById("res").value = "No yetis spotted!\n"
+			document.getElementById("res").value += "No malicious content found"
+		}
 	})
-
-	//.then(function (response) {
-		//return response.text();
-	//}).then(function (text) {
-		//console.log(JSON.parse(text).success);
-	//})
-	//then(data =>{
-		//document.getElementById("res").value = JSON.parse(data).success;
-	//})
 
 }
