@@ -8,13 +8,16 @@ function filefunction() {
     })
 		.then(response => response.json())
 		.then(data =>{
-			if(data.resp == true){
+			if(data.resp.detections != 0){
 				document.getElementById("res").value = "Found a yeti!\n"
 				document.getElementById("res").value += "Link is potentially malicious"
+        document.getElementById("res").value += "Name of malware is "+data.resp.name;
+        document.getElementById("res").value += data.resp.name+" is a "+data.resp.category;
 			}
 			else{
 				document.getElementById("res").value = "No yetis spotted!\n"
-				document.getElementById("res").value += "No malicious content found"
+				document.getElementById("res").value += "No malicious content found\n"
+        //console.log('{ "detections": "'+data.resp.detections+'" }');
 			}
 		})
 
