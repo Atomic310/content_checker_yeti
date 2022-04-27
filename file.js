@@ -15,8 +15,7 @@ function filefunction() {
         document.getElementById("res").value += data.resp.name+" is a "+data.resp.category;
 			}
 			else{
-				document.getElementById("res").value = "No yetis spotted!\n"
-				document.getElementById("res").value += "No malicious content found\n"
+				document.getElementById("res").value = "No malicious content found\n"
         //console.log('{ "detections": "'+data.resp.detections+'" }');
 			}
 		})

@@ -17,8 +17,7 @@ function urlfunction(){
 				document.getElementById("res").value += "Link is potentially malicious"
 			}
 			else{
-				document.getElementById("res").value = "No yetis spotted!\n"
-				document.getElementById("res").value += "No malicious content found in link"
+				document.getElementById("res").value = "No malicious content found in link"
 			}
 		})
 	}
@@ -34,8 +33,7 @@ function urlfunction(){
 				document.getElementById("res").value += "IP is potentially malicious"
 			}
 			else{
-				document.getElementById("res").value = "No yetis spotted!\n"
-				document.getElementById("res").value += "No malicious content found in IP"
+				document.getElementById("res").value = "No malicious content found in IP"
 			}
 		})
 	}
