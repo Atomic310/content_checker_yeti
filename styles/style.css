@@ -30,9 +30,9 @@ li a {
 .slide {
   color: white;
   float: left;
-  position: relative;
-	top: 50%;
-	transform: translateY(50%);
+  position: sticky;
+	top: 10%;
+	transform: translateY(10%);
 }
 
 .myButton {
